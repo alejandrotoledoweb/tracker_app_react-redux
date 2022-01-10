@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default function CreateUser() {
-  return (
-    <div>
-      <h1>You are on the create user component</h1>
-    </div>
-  );
+export default class CreateUser extends Component {
+  constructor(props) {
+    super(props);
+
+    this.onChangeUsername = this.onChangeUsername.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
+
+    this.state = {
+      username: '',
+    };
+  }
+  render() {
+    return <div></div>;
+  }
 }
