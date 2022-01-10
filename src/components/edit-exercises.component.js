@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import axios from 'axios';
+import { Redirect } from 'react-router-dom';
 
 export default class EditExercise extends Component {
   constructor(props) {
@@ -19,6 +20,7 @@ export default class EditExercise extends Component {
       duration: 0,
       date: new Date(),
       users: [],
+      redirect: null,
     };
   }
 
@@ -38,7 +40,7 @@ export default class EditExercise extends Component {
     axios.get('http://localhost:5000/users').then((response) => {
       if (response.data.length > 0) {
         this.setState({
-          username: response.data[0].username,
+          users: response.data.map((user) => user.username),
         });
       }
     });
@@ -80,10 +82,13 @@ export default class EditExercise extends Component {
         console.log(response.data);
       });
 
-    // window.location = '/';
+    // this.setState({ redirect: '/' });
   }
 
   render() {
+    if (this.state.redirect) {
+      return <Redirect to={this.state.redirect} />;
+    }
     return (
       <div>
         <h3>Edit an exercise log</h3>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/navbar.component';
 import ExercisesList from './components/exercises-list.component';
@@ -13,12 +13,12 @@ function App() {
       <div className="container">
         <Navbar />
         <br />
-        <Routes>
-          <Route path="/" exact element={<ExercisesList />} />
-          <Route path="/edit/:id" exact element={<EditExcercise />} />
-          <Route path="/create" exact element={<CreateExercise />} />
-          <Route path="/user" exact element={<CreateUser />} />
-        </Routes>
+        <Switch>
+          <Route path="/" exact component={ExercisesList} />
+          <Route path="/edit/:id" component={EditExcercise} />
+          <Route path="/create" component={CreateExercise} />
+          <Route path="/user" component={CreateUser} />
+        </Switch>
       </div>
     </BrowserRouter>
   );
