@@ -1,6 +1,44 @@
-# Getting Started with Create React App
+# Tracker App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app was created as a practice to learn the MERN stack un a simple project where you can create a user and then create a log of exercises for each user with some description, duration and date. Also, you can delete or edit each of these logs.
+
+This project is meant to work together with the NodeJS project [traker_app_NodeJS](https://github.com/alejandrotoledoweb/tracker_app_nodejs)
+
+![screenshot](./src/assets/tracker_app.png)
+
+## Built With
+
+- JavaScript
+- React
+
+### Linters Used
+
+- Eslint
+- Stylelint
+
+## Getting Started
+
+To get a local copy up and follow these simple example steps.
+
+### Prerequisites
+
+- Local Machine installed [Nodejs](https://nodejs.org/en/download/)
+- Yarn as a package manager
+- A code editor as [Visual Studio](https://code.visualstudio.com/download), Sublime,etc.
+
+### Setup
+
+- Please make a local copy of this repo by typing this command on your terminal.
+
+`git clone https://github.com/alejandrotoledoweb/tracker_app_react-redux.git`
+
+- Then, go to the folder created with:
+
+`cd tracker-app-react-redux`
+
+- Install all dependencies
+
+`npm install`
 
 ## Available Scripts
 
@@ -39,28 +77,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
@@ -68,3 +84,25 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Author
+
+👤 **Alejandro Toledo**
+
+- GitHub: [@alejandrotoledoweb](https://github.com/alejandrotoledoweb)
+- Twitter: [@alejot](https://twitter.com/alejot)
+- LinkedIn: [Alejandro Toledo](https://www.linkedin.com/in/alejandro-toledo-freire/)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/alejandrotoledoweb/tracker_app_react-redux/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
